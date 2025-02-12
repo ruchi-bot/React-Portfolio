@@ -1,13 +1,17 @@
 {
+  "homepage": "https://ruchi-bot.github.io/My-Portfolio",
   "name": "react-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && gh-pages -d build"
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "@fontsource/outfit": "^5.1.1",
